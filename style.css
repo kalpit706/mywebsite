@@ -44,7 +44,7 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 200px;
     height: 3px;
     background: #111;
     transform: translateX(-50%);
@@ -54,9 +54,9 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #EF3D77;
     padding: 0 5px;
-    background: #fff;
+    background: #111;
     transform: translateX(-50%);
 }
 
@@ -71,8 +71,8 @@ section .title::after{
 
 }
 .navbar.sticky{
-    padding: 5px 0;
-    background: crimson;
+    padding: 4px 0;
+    background: #10bf07;
 }
 .navbar .max-width{
     display: flex;
@@ -80,8 +80,8 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: rgb(225, 191, 0);
-    font-size: 45px;
+    color: rgba(255, 0, 0, 0);
+    font-size: 46px;
     font-weight: 800;
 }
 .navbar .logo a span{
@@ -104,7 +104,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: whitesmoke;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -112,33 +112,6 @@ section .title::after{
 
 
 
-
-/* underline on the menu buttons  */
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: crimson;
-
-}
-  
-.hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: crimson;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-  
-.hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-  
 
 
 
@@ -155,9 +128,10 @@ section .title::after{
     /* height: 41px; */
     /* padding: 7px; */
     /* margin: 25px; */
-    /* background: lightgray; */
+    background: #10bf07;
     border: none;
     text-align: center;
+    border-radius: 11px;
 }
 
 .menu-btn::before{
@@ -167,8 +141,8 @@ section .title::after{
     content: "";
     left: 0;
     top: 0;
-    border-left: 3px solid rgb(247, 3, 3);
-    border-top: 3px solid rgb(78, 189, 4);
+    border-left: 3px solid #10bf07;
+    border-top: 3px solid #10bf07;
 }
 
 .menu-btn::after{
@@ -178,8 +152,8 @@ section .title::after{
     content: "";
     right: 0;
     bottom: 0;
-    border-right: 3px solid rgb(72, 0, 255);
-    border-bottom: 3px solid rgb(255, 230, 0);
+    border-right: 3px solid #10bf07;
+    border-bottom: 3px solid #10bf07;
 }
 
 
@@ -188,7 +162,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #EF3D77;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -216,8 +190,8 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/goop.jpg") no-repeat center;
-    /* background: #141414; */
+    background: url("images/wal.jpg") no-repeat center;
+    /* background: #7c1088; */
     height: 100vh;
     color: rgb(10, 10, 10);
     min-height: 500px;
@@ -247,7 +221,7 @@ section .title::after{
     color: rgb(102, 255, 0);
 }
 .home .home-content .text-3 span{
-    color: rgb(255, 0, 51);
+    color: #FFFFFF;
     font-weight: 500;
 }
 .home .home-content a{
@@ -263,14 +237,23 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: rgb(226, 226, 0);
+    /* color: red; */
     background: none;
 }
 
 /* about section styling */
+.about{
+    color: #ffff;
+    background: #01000E;     /* opposite color // very needed */
+}
+
+
 .about .title::after{
     content: "<3";
+    color: aqua;
+    background: none;
 }
+
 .about .about-content .left{
     width: 45%;
 }
@@ -289,25 +272,25 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: rgb(0, 255, 0);
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background: rgb(1, 167, 26);
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #EF3D77;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: #EF3D77;
     background: none;
 }
 
@@ -322,12 +305,13 @@ section .title::after{
 }
 .services .title::before,
 .teams .title::before{
-    background: #fff;
+    background: #ffff;
 }
 .services .title::after,
 .teams .title::after{
     background: #111;
     content: "what i'm good at";
+    color: aqua;
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -339,7 +323,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: rgb(2, 168, 2);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -349,7 +333,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: #EF3D77;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -370,6 +354,7 @@ section .title::after{
 
 .skills .title::after{
     content: "what i know";
+    color: aqua;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -384,18 +369,18 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: crimson;
+    background: #000000;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #EF3D77;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: crimson;
+    color: #EF3D77;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -423,7 +408,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: #EF3D77;
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -447,6 +432,7 @@ section .title::after{
 /* teams section styling */
 .teams .title::after{
     content: "who with me";
+    color: aqua;
 }
 .teams .carousel .card{
     background: #222;
@@ -457,7 +443,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: crimson;
+    background: rgb(1, 172, 1);
 }
 .teams .carousel .card .box{
     display: flex;
@@ -479,11 +465,11 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid #EF3D77;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
-    border-color: #fff;
+    border-color: aqua;
 }
 .owl-dots{
     text-align: center;
@@ -495,7 +481,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #EF3D77!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -504,7 +490,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: #EF3D77!important;
 }
 
 
@@ -532,8 +518,8 @@ section .title::after{
 
 
 .contact .title::after{
-    content: "get in touch";
-    color: crimson;
+    content: "--get in touch--";
+    color: aqua;
     background: #111;
 }
 .contact .contact-content .column{
@@ -566,7 +552,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #EF3D77;
     
 }
 .contact .contact-content .info .head{
@@ -597,6 +583,7 @@ section .title::after{
     height: 100%;
     width: 100%;
     border: 1px solid lightgrey;
+    background: rgb(229, 224, 224);
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -629,13 +616,13 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
+  background: #EF3D77;
+  border: 2px solid #EF3D77;
   transition: all 0.3s ease;
   
 }
 .right form .button-area button:hover{
-  color: crimson;
+  color: #EF3D77;
   background: none;
 }
 /* footer section styling */
@@ -646,7 +633,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: crimson;
+    color: #EF3D77;
     text-decoration: none;
 }
 footer span a:hover{
