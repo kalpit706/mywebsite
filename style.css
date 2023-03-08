@@ -216,7 +216,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/ash-edmonds-0aWZdK8nK2I-unsplash.jpg") no-repeat center;
+    background: url("images/goop.jpg") no-repeat center;
     /* background: #141414; */
     height: 100vh;
     color: rgb(10, 10, 10);
