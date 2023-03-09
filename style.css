@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Tilt Neon', cursive;
 }
 html{
     scroll-behavior: smooth;
 }
+
+
+
+
 
 /* all similar content styling codes */
 section{
@@ -71,8 +78,8 @@ section .title::after{
 
 }
 .navbar.sticky{
-    padding: 4px 0;
-    background: #10bf07;
+    padding: 3px 0;
+    background: #DB3774;
 }
 .navbar .max-width{
     display: flex;
@@ -85,11 +92,11 @@ section .title::after{
     font-weight: 800;
 }
 .navbar .logo a span{
-    color: rgb(22, 220, 0);
+    color: #DB3774;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: rgb(255, 255, 255);
+    color: #01000E;     
 }
 .navbar .menu li{
     list-style: none;
@@ -97,14 +104,14 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: rgb(3, 3, 3);
-    font-size: 24px;
+    color: #01000E;
+    font-size: 26px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: whitesmoke;
+    color: #fff;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -128,10 +135,10 @@ section .title::after{
     /* height: 41px; */
     /* padding: 7px; */
     /* margin: 25px; */
-    background: #10bf07;
+    background: #DB3774;
     border: none;
     text-align: center;
-    border-radius: 11px;
+    border-radius: 7px;
 }
 
 .menu-btn::before{
@@ -141,8 +148,8 @@ section .title::after{
     content: "";
     left: 0;
     top: 0;
-    border-left: 3px solid #10bf07;
-    border-top: 3px solid #10bf07;
+    border-left: 3px solid #DB3774;
+    border-top: 3px solid #DB3774;
 }
 
 .menu-btn::after{
@@ -152,8 +159,8 @@ section .title::after{
     content: "";
     right: 0;
     bottom: 0;
-    border-right: 3px solid #10bf07;
-    border-bottom: 3px solid #10bf07;
+    border-right: 3px solid #DB3774;
+    border-bottom: 3px solid #DB3774;
 }
 
 
@@ -190,7 +197,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/wal.jpg") no-repeat center;
+        background: url("images/wal.jpg") no-repeat center;
     /* background: #7c1088; */
     height: 100vh;
     color: rgb(10, 10, 10);
@@ -208,7 +215,7 @@ section .title::after{
 }
 .home .home-content .text-1{
     font-size: 27px;
-    color: aqua;
+    color: #DB3774;
 }
 .home .home-content .text-2{
     font-size: 75px;
@@ -218,7 +225,7 @@ section .title::after{
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
-    color: rgb(102, 255, 0);
+    color: #DB3774;
 }
 .home .home-content .text-3 span{
     color: #FFFFFF;
@@ -226,19 +233,20 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: rgb(6, 129, 138);
-    color: #fff;
+    background: #EF3D77;
+    color: #01000E;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid rgb(37, 255, 8);
+    border: 2px solid #EF3D77;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
     /* color: red; */
     background: none;
+    color: #fff;
 }
 
 /* about section styling */
@@ -250,7 +258,7 @@ section .title::after{
 
 .about .title::after{
     content: "<3";
-    color: aqua;
+    color: #fff;
     background: none;
 }
 
@@ -272,20 +280,20 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: rgb(0, 255, 0);
+    color: #EF3D77;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: rgb(1, 167, 26);
-    color: #fff;
+    background: #EF3D77;
+    color: #01000E;
     font-size: 20px;
     font-weight: 500;
-    padding: 10px 30px;
+    padding: 5px 15px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 5px;
     border: 2px solid #EF3D77;
     transition: all 0.3s ease;
 }
@@ -293,7 +301,6 @@ section .title::after{
     color: #EF3D77;
     background: none;
 }
-
 
 
 
@@ -311,7 +318,7 @@ section .title::after{
 .teams .title::after{
     background: #111;
     content: "what i'm good at";
-    color: aqua;
+    color: #DB3774;
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -323,7 +330,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: rgb(2, 168, 2);
+    background: #EF3D77;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -354,7 +361,7 @@ section .title::after{
 
 .skills .title::after{
     content: "what i know";
-    color: aqua;
+    color: #DB3774;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -432,7 +439,7 @@ section .title::after{
 /* teams section styling */
 .teams .title::after{
     content: "who with me";
-    color: aqua;
+    color: #DB3774;
 }
 .teams .carousel .card{
     background: #222;
@@ -443,7 +450,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: rgb(1, 172, 1);
+    background: #EF3D77;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -469,7 +476,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
-    border-color: aqua;
+    border-color: #DB3774;
 }
 .owl-dots{
     text-align: center;
@@ -519,7 +526,7 @@ section .title::after{
 
 .contact .title::after{
     content: "--get in touch--";
-    color: aqua;
+    color: #DB3774;
     background: #111;
 }
 .contact .contact-content .column{
@@ -583,7 +590,7 @@ section .title::after{
     height: 100%;
     width: 100%;
     border: 1px solid lightgrey;
-    background: rgb(229, 224, 224);
+    background: rgb(221, 125, 183);
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -594,7 +601,7 @@ section .title::after{
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
+    border-color: #c5c0c0;
     
 }
 .contact .right form .textarea textarea{
@@ -603,10 +610,9 @@ section .title::after{
 }
 .contact .right form .button-area{
   display: flex;
-  align-items: center;
-}
+  align-items: center;}
 .right form .button-area button{
-  color: #fff;
+  color: #01000E;
   display: block;
   width: 160px!important;
   height: 45px;
