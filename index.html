@@ -19,65 +19,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
-    <!-- <div id="preloader"></div> -->
-    <div id="loaderContainer">
-        <div id="loaderGif"></div>
-      </div>
-    <style>
-        * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    }
-
-    #loaderContainer {
-    height: 100%;
-    width: 100%;
-    background: radial-gradient(circle, #01000E 0%, #010106 100%);
-    z-index: 100000;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    overflow: hidden !important;
-    position: fixed;
-    }
-
-    #loaderGif {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    border: 2px solid #EF3D77;
-    border-top: 5px dashed;
-    border-bottom: 0;
-    border-color: #EF3D77;
-    animation: loaderOut 2s linear infinite;
-    }
-
-    @keyframes loaderOut {
-    0% {
-        transform: rotate(0);
-    }
-
-    25% {
-        transform: rotate(-180deg);
-    }
-
-    50% {
-        transform: rotate(0);
-    }
-
-    75% {
-        transform: rotate(180deg);
-    }
-
-    100% {
-        transform: rotate(0);
-    }
-    }
-
-    </style>
-
-
 
     <!-- nav bar  -->
     <div class="scroll-up-btn">
@@ -122,8 +63,7 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <!-- <img src="images/hacker.jpg" alt="kalpits image"> -->
-                    <img src="https://source.unsplash.com/1600x900/?student,man" alt="my picture">
+                    <img src="images/hacker.jpg" alt="kalpits image">
                 </div>
                 <div class="column right">
                     <div class="text">My daily routine in short:</div>
@@ -185,8 +125,8 @@
             <h2 class="title">WeatherCheck</h2>
             <div class="about-content">
                 <div class="left">
-                    <img src="https://source.unsplash.com/1600x900/?landscape,weather,nepal" alt="weather image">
-                    <!-- <img src="images/weather.webp" alt="weather image"> -->
+                    <!-- <img src="https://source.unsplash.com/1600x900/?landscape,weather,nepal" alt="weather image"> -->
+                    <img src="images/weather.webp" alt="weather image">
                 </div>
                 <div class="right">
                     <div class="text">Weather<span class="typing-2"></span></div>
@@ -268,15 +208,6 @@
     <!-- particle js files  -->
     <script src="particles.js"></script>
     <script src="app.js"></script>
-
-    <script>
-        var loader = document.getElementById("loaderContainer");
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
-        // document.body.style.overflow = "hidden";
-        
-    </script>
               
 </body>
 </html>
